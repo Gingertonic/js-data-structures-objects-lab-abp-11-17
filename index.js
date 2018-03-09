@@ -1,5 +1,9 @@
+// const driver = {
+//   key: 'value',
+// }
+
 const driver = {
-  key: 'value',
+  manType: 'hairy',
 }
 
 
@@ -9,9 +13,14 @@ function updateDriverWithKeyAndValue(obj, key, value) {
   return newDriver;
 }
 
-function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
-  driver[key] = value;
-  return driver;
+// function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
+//   driver[key] = value;
+//   return driver;
+// }
+
+function destructivelyUpdateDriverWithKeyAndValue(obj, key, value) {
+  obj[key] = value;
+  return obj;
 }
 
 function deleteFromDriverByKey(obj,key) {
